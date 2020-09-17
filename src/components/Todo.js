@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Todo({ text, todo, todos, setTodos }) {
+  //Functions
   function deleteHandler() {
     setTodos(todos.filter((item) => item.id !== todo.id));
   }
@@ -16,6 +17,7 @@ export default function Todo({ text, todo, todos, setTodos }) {
     );
   }
 
+  //Return
   return (
     <div className="todo">
       <li className={`todo-item ${todo.completed ? "completed" : ""}`}>

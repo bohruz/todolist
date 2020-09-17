@@ -7,6 +7,7 @@ export default function Form({
   setTodos,
   setStatus,
 }) {
+  // Functions
   const inputTextHandler = (e) => {
     setInputText(e.target.value);
   };
@@ -25,6 +26,8 @@ export default function Form({
   function statusHandler(e) {
     setStatus(e.target.value);
   }
+
+  //Return
 
   return (
     <form>
